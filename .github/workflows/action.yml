@@ -1,7 +1,7 @@
 name: Github action for REACT
 on: 
   push:
-  workflow-dispatch:
+  workflow_dispatch:
 jobs:
   test:
     runs-on: Ubuntu-latest
