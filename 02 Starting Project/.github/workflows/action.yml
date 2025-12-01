@@ -1,0 +1,14 @@
+name: Github action for REACT
+on: push
+jobs:
+  test:
+    runs-on: Ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v6
+      - name: node install
+        uses: action/setup-node@v6
+      - name: install dependency
+        run: npm ci
+      - name: do test
+        run: npn test
