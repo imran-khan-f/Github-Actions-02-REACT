@@ -1,5 +1,5 @@
 name: Github action for REACT
-on: push
+on: [push, workflow-dispatch]
 jobs:
   test:
     runs-on: Ubuntu-latest
