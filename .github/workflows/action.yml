@@ -7,7 +7,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v6
       - name: node install
-        uses: action/setup-node@v6
+        uses: action/setup-node@v4
       - name: install dependency
         run: npm ci
       - name: do test
